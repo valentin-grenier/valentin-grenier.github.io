@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #28282B;
+  background-repeat: no-repeat;
+  font-family: Roboto Slab, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+span.blink {
+  color: lightblue;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container hr {
+  max-width: 3rem;
+  margin: 1rem auto;
+  height: 3px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socials ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.socials a:hover {
+  opacity: 0.5;
+}
+
+.socials i {
+  font-size: 1.25rem;
+}
+
+
+
+
+@keyframes blink {
+  to {
+      visibility: hidden;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 85%;
+  }
+
+  .container {
+    max-width: 350px;
+  }
+}
